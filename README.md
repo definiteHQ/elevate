@@ -64,6 +64,6 @@ environment. Please note that this will change any changed files or directories 
 
 For now on, we only can help you how to use this framework, not the well-documented framework components, libraries
 or else. It's still on development. So, for any related questions about using the framework, feel free
-to ask us via emai to [mailto:developer@definite.co.id](Definite Developers Mailing List).
+to ask us via emai to [Definite Developers Mailing List](mailto:developer@definite.co.id).
 
 Good luck and have fun!
