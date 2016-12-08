@@ -1,0 +1,75 @@
+// Accessories
+// -----------
+
+// Display
+.inline-block{ 
+    display: inline-block;
+}
+.inline{ 
+    display: inline; 
+}
+// Positioning
+.absolute{ 
+    position: absolute; 
+}
+.fixed{ 
+    position: fixed; 
+}
+.relative{ 
+    position: relative; 
+}
+// Text Transform
+.capitalize{ 
+    text-transform: capitalize; 
+}
+.lowercase{ 
+    text-transform: lowercase; 
+}
+.normal{ 
+    text-transform: none; 
+}
+.uppercase{ 
+    text-transform: uppercase; 
+}
+// Margins 
+.margin-0{ 
+    margin: 0; 
+}
+.margin-bottom-0{ 
+    margin-bottom: 0; 
+}
+.margin-left-0{ 
+    margin-left: 0; 
+}
+.margin-right-0{ 
+    margin-right: 0; 
+}
+.margin-top-0{ 
+    margin-top: 0; 
+}
+// Padding
+.padding-0{ 
+    padding: 0; 
+}
+.padding-bottom-0{ 
+    padding-bottom: 0; 
+}
+.padding-left-0{ 
+    padding-left: 0; 
+}
+.padding-right-0{ 
+    padding-right: 0; 
+}
+.padding-top-0{ 
+    padding-top: 0; 
+}
+// Float
+.float-right{ 
+    float: right; 
+}
+.float-left{ 
+    float: left;
+}
+.float-center{ 
+    float: none; 
+}
