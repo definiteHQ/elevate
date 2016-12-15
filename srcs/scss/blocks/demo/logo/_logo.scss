@@ -1,0 +1,19 @@
+.logo {
+	&__img {
+		display: inline-block;
+		vertical-align: middle;
+		width: 26px;
+		margin-right: 10px;
+	}
+
+	&__heading {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: white;
+		margin: 10px 0;
+		font-size: 18px;
+	}
+}

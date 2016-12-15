@@ -1,0 +1,8 @@
+.nav {
+	margin: 0;
+	padding-left: 0;
+
+	@import 
+		"nav__item",
+		"nav__item--label";
+}

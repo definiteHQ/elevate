@@ -69,3 +69,12 @@ us an email to: developer@definite.co.id.
 
 Best Regard,
 **Definite Tech**
+
+# Alpha 1 #
+## Changelog 15/12/16##
+- Base Structure
+- Grid System Created
+- Mixins Imported
+- Masthead Created
+- Normalize Imported from https://necolas.github.io/normalize.css/
+- Variables Created

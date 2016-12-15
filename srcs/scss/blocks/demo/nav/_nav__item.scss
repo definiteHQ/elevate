@@ -1,0 +1,12 @@
+&__item {
+	list-style: none;
+	padding: 7px 0;
+
+	@import "nav__item--label";
+
+	hr {
+		background: #ccc;
+		height: 1px;
+		border:0;
+	}
+}

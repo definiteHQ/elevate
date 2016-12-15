@@ -8,3 +8,19 @@
  * Contact Mail: developer@definite.co.id
  * ==========================================================================================
  */
+
+ @import "variables";
+
+ @import "blocks/mixins", 
+ 		 "blocks/normalize", 
+ 		 "blocks/masthead", 
+ 		 "blocks/grid";
+
+ @import "helpers/accessories";
+
+  // demo assets
+ @import "blocks/demo/reset/reset",
+ 		 "blocks/demo/logo/logo",
+ 		 "blocks/demo/header/header",
+ 		 "blocks/demo/nav/nav",
+ 		 "blocks/demo/grid/grid";
