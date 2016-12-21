@@ -1,0 +1,19 @@
+//== Card
+$card-padding: 20px !default;
+$card-bgcolor: #FFF;
+$card-color: #767676;
+$card-border: 1px solid #eee;
+
+.el-card {
+	background: $card-bgcolor;
+	border: $card-border;
+
+	img{
+		width: 100%;
+	}
+
+	@import 
+		"card/_full",
+		"card/__excerpt";
+	
+}
