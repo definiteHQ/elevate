@@ -1,0 +1,9 @@
+&_full{
+	border: $card-border;
+	padding: ceil(($card-padding / 2));
+
+	img{
+		width: 100%;
+	}
+
+}
