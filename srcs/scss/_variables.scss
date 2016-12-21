@@ -39,14 +39,14 @@ $headings-color:          inherit !default;
 
 //==Grid
 // Mobile Screen
-$screen-small: 480px !default;
-$screen-xsmall: 767px !default;
+$phone: 480px !default;
+$phone-extend: 767px !default;
 //Tablet Screen
-$screen-medium: 801px !default;
-$screen-xmedium: 1025px !default;
+$tablet: 801px !default;
+$tablet-extend: 1025px !default;
 //Desktop Screen
-$screen-large: 1200px !default;
-$screen-xlarge: 1440px !default;
+$desktop: 1200px !default;
+$desktop-extend: 1440px !default;
 //Gutter
 $gutter-width: 0 15px !default;
 $grid-columns: 12 !default;

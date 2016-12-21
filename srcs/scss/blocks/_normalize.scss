@@ -81,15 +81,15 @@ hr {
 	height: 0;
 	overflow: visible;
 }
-pre {
-	font-family: monospace, monospace;
-	font-size: 1em;
-	 white-space: pre-wrap;       /* css-3 */
-	 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	 white-space: -pre-wrap;      /* Opera 4-6 */
-	 white-space: -o-pre-wrap;    /* Opera 7 */
-	 word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
+// pre {
+// 	font-family: monospace, monospace;
+// 	font-size: 1em;
+// 	 white-space: pre-wrap;       /* css-3 */
+// 	 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+// 	 white-space: -pre-wrap;      /* Opera 4-6 */
+// 	 white-space: -o-pre-wrap;    /* Opera 7 */
+// 	 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+// }
 a {
 	background-color: transparent;
 	text-decoration: none;
@@ -114,7 +114,14 @@ strong {
 code {
 	font-family: monospace, monospace;
 	font-size: 1em;
+
+	padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
 }
+
 kbd {
 	font-family: monospace, monospace;
 	font-size: 1em;

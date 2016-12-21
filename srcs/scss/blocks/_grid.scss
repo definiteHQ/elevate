@@ -1,8 +1,24 @@
 // [converter] This is defined recursively in LESS, but Sass supports real loops
+
+@mixin column {
+  float: left;
+  min-height: 1px;
+  position: relative;
+  padding-left:  ceil(($grid-gutter-width / 2));
+  padding-right: floor(($grid-gutter-width / 2));
+
+    .lt-ie8 &,
+    .lt-ie9 &{
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+}
+
 @mixin calc-grid-column($index, $class, $type) {
   @if ($type == width) and ($index > 0) {
     .#{$class}-#{$index} {
       width: percentage(($index / $grid-columns));
+      @include column;
     }
   }
   @if ($type == push) and ($index > 0) {
@@ -48,33 +64,33 @@
   @include loop-grid-columns($grid-columns, $class, offset);
 }
 
-@include make-grid(small);
+@include make-grid(el-p);
 
-@media only screen and (min-width: $screen-xsmall) {
-	@include make-grid(xsmall);
+@media only screen and (min-width: $phone-extend) {
+	@include make-grid(el-px);
 }
 
-@media only screen and (min-width: $screen-medium) {
-	@include make-grid(medium);
+@media only screen and (min-width: $tablet) {
+	@include make-grid(el-t);
 }
 
-@media only screen and (min-width: $screen-xmedium) {
-	@include make-grid(xmedium);
+@media only screen and (min-width: $tablet-extend) {
+	@include make-grid(el-tx);
 }
 
 // Default Desktop Screen
-@media only screen and (min-width: $screen-large) {
-	@include make-grid(large);
+@media only screen and (min-width: $desktop) {
+	@include make-grid(el-d);
 }
 
 //Xtra Large Screen
-@media only screen and (min-width: $screen-xlarge) {
-	@include make-grid(xlarge);
+@media only screen and (min-width: $desktop-extend) {
+	@include make-grid(el-dx);
 }
 
 .row {
 	  width: 100%;
-    max-width: $screen-large;
+    max-width: $desktop-extend;
    
     margin-left: auto;
     margin-right: auto;
@@ -87,20 +103,6 @@
     //Fluid Container 
     &--fluid {
 	    max-width: 100%;
-    }
-}
-
-.column, .columns {
-	float: left;
-	min-height: 1px;
-	position: relative;
-	padding-left:  ceil(($grid-gutter-width / 2));
-    padding-right: floor(($grid-gutter-width / 2));
-
-    .lt-ie8 &,
-    .lt-ie9 &{
-    	padding-left: 1%;
-    	padding-right: 1%;
     }
 }
 

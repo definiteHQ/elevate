@@ -37,6 +37,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-notify": "^0.4.5",
     "grunt-webpack": "^1.0.18",
+    "highlight.js": "^9.9.0",
     "jshint-stylish": "^2.2.1",
     "load-grunt-tasks": "^3.5.2",
     "webpack": "^1.13.3",
