@@ -1,0 +1,24 @@
+	&__img {
+		@include background-stuff;
+		height: $card-full-img-height;
+		display: table;
+		width: 100%;
+		padding: $card-full-img-padding;
+		position: relative;
+
+		// Check if variable value true or false
+    	@if $card-full-overlay == true {
+			&:after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				background: $card-full-overlay-background;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		//content
+		 @import "_full__img__content";
+	}
