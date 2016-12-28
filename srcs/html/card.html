@@ -1,38 +1,70 @@
 <!--(bake _partials/_header.html)-->
 <div class="row">
 	<!--(bake _partials/_nav.html)-->
-	<div class="small-12 columns medium-8 columns">
+	<div class="el-p-12 el-t-8">
 		<div class="content">
 
 			<h2 class="content__title">Card</h2>
 			
 			<h4 class="content__title">Card with Description</h4>
-			<div class="el-card">
-				<img src="http://placehold.it/450x250">
+			
+			<div class="clearfix">
+				<!--(bake-start _foreach="card:[card 1, card 2, card 3]")-->
+					<div class="el-d-4">
+						<div class="el-card">
+							<div class="el-card__img">
+								<img src="http://placehold.it/450x250">
+							</div>
+							
+							<div class="el-card__excerpt">
+								<h2 class="el-card__title"><a href="javascript:;">Card Title</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+							</div>
+						</div>
+					</div>
+				<!--(bake-end)-->
+			</div>
+			<div class="code">
+<pre><code class="html">&lt;div class="el-card"&gt;
+	&lt;div class="el-card__img"&gt;
+		&lt;img src="http://placehold.it/450x250"&gt;
+	&lt;/div&gt;
 
-				<div class="el-card__excerpt">
-					<h2>Card Title</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p>
-				</div>
+	&lt;div class="el-card__excerpt"&gt;
+		&lt;h2 class="el-card__title"&gt;&lt;a href="javascript:;"&gt;Card Title&lt;/a&gt;&lt;/h2&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+		nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 			</div>
 
 			<h4 class="content__title">Full Card Image</h4>
 
 			<div class="el-card_full">
-				<img src="http://placehold.it/450x250">
+				<div class="el-card_full__img" style="background-image: url(http://sprintasia.co.id/files/split_second_one_time_password.jpg);">
+					<div class="el-card_full__img__content">
+						<span class="el-card_full__subtitle">Payment Gateway</span>
+						<h2 class="el-card_full__title">Customizable Transaction Report - BLIBLI</h2>
+						<a href="javascript:;" class="button">Read More</a>
+					</div>
+				</div>
 			</div>
 
-			<h4 class="content__title">Full Card Description</h4>
-
-			<div class="el-card_full">
-				<h2>Card Title</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
+			<div class="code">
+<pre><code class="html">&lt;div class="el-card_full"&gt;
+	&lt;div class="el-card_full__img" style="background-image: url(http://sprintasia.co.id/files/split_second_one_time_password.jpg);"&gt;
+		&lt;div class="el-card_full__img__content"&gt;
+			&lt;span class="el-card_full__subtitle"&gt;Payment Gateway&lt;/span&gt;
+			&lt;h2 class="el-card_full__title"&gt;Customizable Transaction Report - BLIBLI&lt;/h2&gt;
+			&lt;a href="javascript:;" class="button"&gt;Read More&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 			</div>
 
 		</div>

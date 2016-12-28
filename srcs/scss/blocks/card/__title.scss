@@ -1,0 +1,9 @@
+&__title {
+	margin: $card-title-margin;
+	font-family: $card-title-font-family;
+	font-size: $card-title-font-size;
+
+	a {
+		color: $card-title-color;
+	}
+}

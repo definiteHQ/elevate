@@ -3,17 +3,18 @@ $card-padding: 20px !default;
 $card-bgcolor: #FFF;
 $card-color: #767676;
 $card-border: 1px solid #eee;
+$card-title-margin: 0 !default;
+$card-title-color: inherit;
+$card-title-font-size: 1.5rem;
+$card-title-font-family: inherit;
 
 .el-card {
 	background: $card-bgcolor;
 	border: $card-border;
 
-	img{
-		width: 100%;
-	}
-
 	@import 
 		"card/_full",
+		"card/__title",
+		"card/__img",
 		"card/__excerpt";
-	
 }
