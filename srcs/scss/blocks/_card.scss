@@ -1,16 +1,8 @@
 //== Card
-$card-padding: 20px !default;
-$card-bgcolor: #FFF;
-$card-color: #767676;
-$card-border: 1px solid #eee;
-$card-title-margin: 0 !default;
-$card-title-color: inherit;
-$card-title-font-size: 1.5rem;
-$card-title-font-family: inherit;
-
 .el-card {
 	background: $card-bgcolor;
 	border: $card-border;
+	margin-bottom: 15px;
 
 	@import 
 		"card/_full",

@@ -51,3 +51,30 @@ $desktop-extend: 1440px !default;
 $gutter-width: 0 15px !default;
 $grid-columns: 12 !default;
 $grid-gutter-width:  30px !default;
+
+//==Card
+// Default
+$card-padding: 20px !default;
+$card-bgcolor: #FFF;
+$card-color: #767676;
+$card-border: 1px solid #eee;
+$card-title-margin: 0 !default;
+$card-title-color: inherit;
+$card-font-size: 14px !default;
+$card-title-font-size: 1.5rem;
+$card-title-font-family: inherit;
+
+// Full
+$card-full-img-height : 300px;
+$card-full-img-padding : 15px;
+$card-full-text-align : center;
+$card-full-text-color : white !default;
+
+//==overlay
+$card-full-overlay: true;
+$card-full-overlay-background: rgba(0, 0, 0, 0.2);
+
+//==heading
+$card-full-title-font-size : 1.5em;
+$card-full-subtitle-font-size: inherit;
+$card-full-subtitle-transform: uppercase;

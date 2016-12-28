@@ -1,17 +1,3 @@
-$card-full-img-height : 300px;
-$card-full-img-padding : 15px;
-$card-full-text-align : center;
-$card-full-text-color : white !default;
-
-//==overlay
-$card-full-overlay: true;
-$card-full-overlay-background: rgba(0, 0, 0, 0.2);
-
-//==heading
-$card-full-title-font-size : 1.5em;
-$card-full-subtitle-font-size: inherit;
-$card-full-subtitle-transform: uppercase;
-
 &_full{
 	border: none;
 	padding: 0;
