@@ -1,0 +1,85 @@
+.table,
+table {
+	width: 100%;
+	border-spacing: 0;
+    border-collapse: collapse;
+
+	thead {
+		> tr{
+			> th,
+			> td {
+				text-align: left;
+				border-bottom: 2px solid #EEEEEE;
+				padding: 8px;
+				vertical-align: bottom;
+				font-weight: bold;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	tfoot {
+		> tr{
+			> th,
+			> td {
+				text-align: left;
+				border-top: 1px solid #EEEEEE;
+				padding: 8px;
+				vertical-align: bottom;
+				font-weight: bold;
+			}
+		}
+	}
+
+	tbody {
+		> tr {
+			> td {
+				padding: 8px;
+
+				@media screen and (max-width: 600px) {
+					box-sizing: border-box;
+			        display: block;
+			        float: left;
+			        clear: left;
+			        width: 100%;
+			        text-align: right;
+			        font-size: 13px;
+
+			        &:before {
+			        	content: attr(data-label);
+				        float: left;
+				        font-weight: bold;
+			        }
+				}
+			} 
+
+			&:not(:last-child) {
+				@media screen and (max-width: 600px) {
+					border-bottom: 1px solid #EEEEEE;
+				}
+				> td {
+					border-bottom: 1px solid #EEEEEE;
+					@media screen and (max-width: 600px) {
+						border-bottom: 0;
+					}
+				}
+			}
+
+			@media screen and (max-width: 600px) { 
+				&:after {
+					content: "";
+			        display: table;
+			        clear: both;
+				}
+
+				&:before {
+					display: block;
+        			border-bottom: 2px solid #ddd;
+				}
+			}
+		}
+	}
+}
